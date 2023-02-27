@@ -52,9 +52,9 @@ let loadProducts=() =>{
 
       let src = element.getElementsByTagName('src')[0].innerHTML;
       let name = element.getElementsByTagName('name')[0].innerHTML;
-      let price = element.getElementsByTagName('price')[0].innerHTML;
       let type = element.getElementsByTagName('type')[0].innerHTML;
-  
+      let price = element.getElementsByTagName('price')[0].innerHTML;
+      
       let plantilla = `<div class="col-xl-3 col-md-6 mb-xl-0 mb-4 mt-4">
           <div class="card card-blog card-plain">
           <div class="card-header p-0 mt-n4 mx-3">
@@ -84,6 +84,32 @@ let loadProducts=() =>{
     /* Callback por fallo: Procese el error */
     console.log( error );
   })
+
+  
 };
 
 loadProducts();
+
+
+/*let element = document.getElementById("dropdownMenuButton");
+
+    element.addEventListener('change', (event) => {
+    //Código a ejecutar
+    //El event contiene la información del elemento seleccionado
+    let ciudad = event.target.value
+    loadDayForecastData(ciudad);
+    
+    let padre = document.getElementsByClassName("list-group")
+    padre = padre[0]
+    padre.innerHTML = " "
+    
+    
+    let element = document.getElementById('loadinfo');
+
+    element.addEventListener('click', (event) => {
+    
+        loadWeekForecastData(ciudad);
+    });
+
+
+});*/
