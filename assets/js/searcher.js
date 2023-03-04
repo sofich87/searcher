@@ -1,7 +1,7 @@
 
 let loadProducts=() =>{
-  let URLjson = 'https://raw.githubusercontent.com/Bootcamp-Espol/FSD02/main/S03D03/clase/recursos/products.json'
-  let URLxml = 'https://raw.githubusercontent.com/Bootcamp-Espol/FSD02/main/S03D03/clase/recursos/products.xml'
+  let URLjson = 'https://raw.githubusercontent.com/Bootcamp-Espol/Datos/main/products.json'
+  let URLxml = 'https://raw.githubusercontent.com/Bootcamp-Espol/Datos/main/products.xml'
   
   fetch(URLjson)
       .then(response => response.json() ) 
